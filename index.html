@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Eventos</title>
+</head>
+<body>
+    <header>
+		<h1>¡Javascript!</h1>
+
+        <div id="tema">
+            <div class="capas" id="capa1" title="dark" onclick="dark()"></div>
+            <div class="capas" id="capa2" title="light"></div>
+            <div class="capas" id="capa3"></div>
+        </div>
+	</header>
+    <section id="resultados">
+       <div id="contenedor1">
+        <label for="el pepe">numero de lugares</label>
+        <input type="number" id="Nlugares" class="primeralista" min="0" max="10" step="1">
+        <label for="el pepe">numero de adultos</label>
+        <input type="number" id="Nadultos" class="primeralista" min="0" max="4" step="1">
+        <label for="el pepe">numero de habitaciones</label>
+        <input type="number" id="Nhabitaciones" class="primeralista" min="0" max="10" step="1">
+        <label for="el pepe">numero de pasajes</label >
+        <input type="number" id="Npaisajes" class="primeralista" min="0" max="4" step="1">
+        <label for="el pepe">numero de menores</label >
+        <input type="number" id="Nmenores" class="primeralista" required="">
+       </div>
+
+       
+    
+           <div id="contenedor2" >
+
+         <div style="display: none;">
+            <label for="menor1">Edad del menor 1</label>
+            <input type="number" class="Imenor1" min="1" max="17" step="1">
+        </div>
+        <div style="display: none;">
+            <label for="menor2">Edad del menor 2</label>
+            <input type="number" class="Imenor2" min="1" max="17" step="1">
+        </div>
+        <div style="display: none;">
+            <label for="menor3">Edad del menor 3</label>
+            <input type="number" class="Imenor3" min="1" max="17" step="1">
+        </div>
+        <div style="display: none;">
+            <label for="menor4">Edad del menor 4</label>
+            <input type="number" class="Imenor4" min="1" max="17" step="1">
+        </div>
+
+           </div>
+
+
+       
+
+
+       
+
+       <div id="contenedor3">
+        <label for="nombre">Tu nombre</label>
+        <input type="text" id="nombre" placeholder="pon tu nombre">
+        <label for="correo">Pon tu correo aqui</label>
+        <input type="text" id="correo" placeholder="pon tu correo">
+        <button id="enviar" onclick="enviardatos()">Enviar los datos</button>
+    </div>
+
+    </section>
+
+    <footer>D A N D </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
